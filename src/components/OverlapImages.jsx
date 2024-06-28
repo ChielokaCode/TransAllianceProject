@@ -36,8 +36,9 @@ const OverlapImages = () => {
           <h2 className="text-white">Discover More</h2>
           <img className="w-6 h-6 ml-20" src={ArrowRightCircle} alt="" />
         </div>
-        <div className="absolute top-[-35%] right-[-13%]">
-          <img className="w-28" src={LineSlant} alt="" />
+        {/* Green Line Slant */}
+        <div className="absolute top-[-40%] right-[-17%]">
+          <img className="w-36" src={LineSlant} alt="" />
         </div>
       </div>
 

@@ -9,7 +9,7 @@ const NavbarT = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const show = window.scrollY > 310;
+      const show = window.scrollY > 10;
       if (show) {
         setNavBackground("bg-[#122038]");
       } else {

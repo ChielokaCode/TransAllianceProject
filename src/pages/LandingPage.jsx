@@ -4,6 +4,7 @@ import OverlapImages from "../components/OverlapImages";
 import HeroGrid from "../components/HeroGrid";
 import OverlapTwoScreens from "../components/OverlapTwoScreens";
 import AboutUs from "../components/AboutUs";
+import OurService from "../components/OurService";
 
 const LandingPage = () => {
   return (
@@ -23,12 +24,13 @@ const LandingPage = () => {
       <OverlapTwoScreens />
 
       {/* Second Screen */}
-      <div className="bg-gray-200 w-full h-screen relative ">
+      <div className="bg-gray-200 w-full h-[200vh] relative space-y-3 pr-4 pl-4 z-10 ">
         {/* Additional content for the second section */}
         <AboutUs />
       </div>
-      <div className="bg-gray-200 w-full h-screen relative">
+      <div className="bg-gray-200 w-full h-[200vh] relative space-y-3 pr-4 pl-4 ">
         {/* Additional content for the second section */}
+        <OurService />
       </div>
     </>
   );

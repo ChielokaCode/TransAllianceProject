@@ -16,6 +16,8 @@ export default {
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(269.18deg, #F27405 6.87%, #D3BD00 118.13%)",
+        "button-gradient1":
+          "linear-gradient(263.68deg, #5AAF87 4.04%, #D3BD00 127.52%)",
       },
     },
   },

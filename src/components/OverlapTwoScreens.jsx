@@ -9,7 +9,7 @@ import SixthLogo from "./images/sixthLogo.png";
 const OverlapTwoScreens = () => {
   return (
     <>
-      <div className="absolute p-6 bottom-[-15%] left-[10%] right-[10%] bg-white bg-opacity-50 backdrop-blur-lg h-[25vh] rounded-xl border-r-white z-10">
+      <div className="absolute p-6 bottom-[-15%] left-[10%] right-[10%] bg-white bg-opacity-50 backdrop-blur-lg h-[25vh] rounded-xl border-r-white z-20">
         <p className="font-dm-sans font-normal text-black">
           Send and Receive Money from all <br /> over with ease.
         </p>
