@@ -11,6 +11,12 @@
   @apply bg-clip-text text-transparent bg-custom-gradient;
 }
 
+.gayathri-bold {
+  font-family: "Gayathri", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;

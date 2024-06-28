@@ -114,7 +114,7 @@ const AboutUs = () => {
       {/*  */}
       <SideBySideDivs
         containerClassName="w-screen h-[60vh]"
-        containerStyle={{ bottom: "-20%", left: "0%" }}
+        containerStyle={{ bottom: "-19%", left: "0%" }}
         div1Props={{
           className: "flex justify-end bg-[#5FB083] pt-4",
           style: { bottom: "-10%" },
@@ -160,8 +160,8 @@ const AboutUs = () => {
                 <img className="w-fit opacity-50" src={SideBlur} alt="" />
               </div>
               {/* Side Trans Logo */}
-              <div className="absolute top-0 right-0 mr-4 mt-3">
-                <img src={SideTransLogo} alt="" />
+              <div className="absolute top-0 right-[8%] mr-4 mt-3">
+                <img className="w-14 h-14" src={SideTransLogo} alt="" />
               </div>
               {/* Side Woman with Laptop */}
               <div className="flex  top-[10%] left-[30%] absolute justify-center items-center">

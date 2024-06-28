@@ -28,7 +28,7 @@ const LandingPage = () => {
         {/* Additional content for the second section */}
         <AboutUs />
       </div>
-      <div className="bg-gray-200 w-full h-[200vh] relative space-y-3 pr-4 pl-4 ">
+      <div className="bg-gray-100 w-full h-[200vh] relative space-y-3 pr-4 pl-4 ">
         {/* Additional content for the second section */}
         <OurService />
       </div>
