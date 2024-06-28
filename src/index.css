@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Gayathri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Gayathri:wght@100;400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* src/styles/fonts.css */
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-custom-gradient;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
