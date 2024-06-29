@@ -1,15 +1,15 @@
 import React from "react";
 import NavBar from "../views/navbar/NavBar"; // Correct import statement
-import OverlapImages from "../components/OverlapImages";
-import HeroGrid from "../components/HeroGrid";
-import OverlapTwoScreens from "../components/OverlapTwoScreens";
-import AboutUs from "../components/AboutUs";
-import OurService from "../components/OurService";
-import Sectors from "../components/Sectors";
-import SpeakToSales from "../components/SpeakToSales";
-import Footer from "../components/Footer";
+import OverlapImages from "../views/overlapImages/OverlapImages";
+import HeroGrid from "../views/hero/HeroGrid";
+import OverlapTwoScreens from "../views/overlapImages/OverlapTwoScreens";
+import AboutUs from "../views/AboutUs";
+import OurService from "../views/OurService";
+import Sectors from "../views/Sectors";
+import SpeakToSales from "../views/SpeakToSales";
+import FooterComponent from "../views/FooterComponent";
 
-const LandingPage = () => {
+const HomePage = () => {
   return (
     <>
       <div className="bg-[#122038] w-full h-screen relative">
@@ -45,10 +45,10 @@ const LandingPage = () => {
 
       {/* Footer */}
       <div className="bg-gray-100 w-full h-[50vh] relative space-y-3 pr-4 pl-4 ">
-        <Footer />
+        <FooterComponent />
       </div>
     </>
   );
 };
 
-export default LandingPage;
+export default HomePage;

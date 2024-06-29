@@ -1,12 +1,12 @@
 import React from "react";
-import SectorsFirstImage from "./images/SectorsFirstImage.png";
-import SectorsSecondImage from "./images/SectorsThirdImage.png";
-import SectorsThirdImage from "./images/SectorsSecondImage.png";
-import SectorsFourthImage from "./images/SectorsFourthImage.png";
-import LearnMoreButton from "./images/ArrowRightCircle.png";
-import AnnualReportBlurLeft from "./images/AnnualReportBlurLeft.png";
-import AnnualReportBlur from "./images/AnnualReportBlur.png";
-import ImageCard from "./ImageCard";
+import SectorsFirstImage from "/src/assets/images/SectorsFirstImage.png";
+import SectorsSecondImage from "/src/assets/images/SectorsThirdImage.png";
+import SectorsThirdImage from "/src/assets/images/SectorsSecondImage.png";
+import SectorsFourthImage from "/src/assets/images/SectorsFourthImage.png";
+import LearnMoreButton from "/src/assets/images/ArrowRightCircle.png";
+import AnnualReportBlurLeft from "/src/assets/images/AnnualReportBlurLeft.png";
+import AnnualReportBlur from "/src/assets/images/AnnualReportBlur.png";
+import ImageCard from "../components/ImageCard";
 
 const Sectors = () => {
   return (

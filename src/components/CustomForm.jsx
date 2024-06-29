@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Button from "./Button";
-import LightGreenArrowCircle from "./images/LightGreenArrowCircle.png";
+import LightGreenArrowCircle from "/src/assets/images/LightGreenArrowCircle.png";
 
 const CustomForm = () => {
   const [userMessage, setUserMessage] = useState({

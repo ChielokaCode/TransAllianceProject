@@ -1,10 +1,10 @@
 import React from "react";
-import FirstLogo from "./images/firstLogo.png";
-import SecondLogo from "./images/secondLogo.png";
-import ThirdLogo from "./images/thirdLogo.png";
-import FourthLogo from "./images/fourthLogo.png";
-import FifthLogo from "./images/fifthLogo.png";
-import SixthLogo from "./images/sixthLogo.png";
+import FirstLogo from "/src/assets/images/firstLogo.png";
+import SecondLogo from "/src/assets/images/secondLogo.png";
+import ThirdLogo from "/src/assets/images/thirdLogo.png";
+import FourthLogo from "/src/assets/images/fourthLogo.png";
+import FifthLogo from "/src/assets/images/fifthLogo.png";
+import SixthLogo from "/src/assets/images/sixthLogo.png";
 
 const OverlapTwoScreens = () => {
   return (

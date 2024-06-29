@@ -1,6 +1,6 @@
 import React from "react";
-import SalesFirstImage from "./images/SalesFirstImage.png";
-import CustomForm from "./CustomForm";
+import SalesFirstImage from "/src/assets/images/SalesFirstImage.png";
+import CustomForm from "../components/CustomForm";
 
 const SpeakToSales = () => {
   return (

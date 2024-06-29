@@ -1,6 +1,6 @@
 import React from "react";
-import FirstImage from "./images/firstImage.png";
-import ImageCard from "./ImageCard";
+import FirstImage from "/src/assets/images/firstImage.png";
+import ImageCard from "../../components/ImageCard";
 
 const RightHandHero = () => {
   return (

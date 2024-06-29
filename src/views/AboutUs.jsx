@@ -1,19 +1,19 @@
 import React from "react";
 import Button from "../components/Button";
-import ArrowRightCircle from "./images/ArrowRightCircle.png";
-import AboutUsBlurImage from "./images/AboutUsBlurImage.png";
-import AboutUsWoman from "./images/AboutUsWoman.png";
-import AboutUsWomanBackground from "./images/AboutUsWomanBackground.png";
-import AboutUsMan from "./images/AboutUsMan.png";
-import AboutUsManBackground from "./images/AboutUsManBackground.png";
-import AboutUsFirstImg from "./images/AboutUsFirstImg.png";
-import LightGreenArrowCircle from "./images/LightGreenArrowCircle.png";
-import ImageCard from "./ImageCard";
-import GroupBlur from "./images/GroupBlur.png";
-import SideBySideDivs from "./SideBySideDivs";
-import SideWoman from "./images/SideWoman.png";
-import SideBlur from "./images/SideBlur.png";
-import SideTransLogo from "/src/assets/transLogo.png";
+import ArrowRightCircle from "/src/assets/images/ArrowRightCircle.png";
+import AboutUsBlurImage from "/src/assets/images/AboutUsBlurImage.png";
+import AboutUsWoman from "/src/assets/images/AboutUsWoman.png";
+import AboutUsWomanBackground from "/src/assets/images/AboutUsWomanBackground.png";
+import AboutUsMan from "/src/assets/images/AboutUsMan.png";
+import AboutUsManBackground from "/src/assets/images/AboutUsManBackground.png";
+import AboutUsFirstImg from "/src/assets/images/AboutUsFirstImg.png";
+import LightGreenArrowCircle from "/src/assets/images/LightGreenArrowCircle.png";
+import ImageCard from "../components/ImageCard";
+import GroupBlur from "/src/assets/images/GroupBlur.png";
+import SideBySideDivs from "../components/SideBySideDivs";
+import SideWoman from "/src/assets/images/SideWoman.png";
+import SideBlur from "/src/assets/images/SideBlur.png";
+import SideTransLogo from "/src/assets/images/transLogo.png";
 
 const AboutUs = () => {
   const MoneyOut = () => {

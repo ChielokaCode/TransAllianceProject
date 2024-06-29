@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "tailwindcss/tailwind.css"; // Ensure Tailwind CSS is imported
-import TransLogo from "/src/assets/transLogo.png";
+import TransLogo from "/src/assets/images/transLogo.png";
 
 const NavbarT = () => {
   const [navBackground, setNavBackground] = useState("bg-transparent");

@@ -2,7 +2,7 @@ import React, { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Import views using lazy loading
-const LandingPage = lazy(() => import("./pages/LandingPage"));
+const LandingPage = lazy(() => import("./pages/HomePage"));
 
 function App() {
   return (

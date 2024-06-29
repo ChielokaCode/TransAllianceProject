@@ -1,14 +1,14 @@
 import React from "react";
-import ServiceCard from "./ServiceCard";
-import ServicesFirstIcon from "./images/ServicesFirstIcon.png";
-import ServicesSecondIcon from "./images/ServicesSecondIcon.png";
-import ServicesThirdIcon from "./images/ServicesThirdIcon.png";
-import ServicesFourthIcon from "./images/ServicesFourthIcon.png";
-import ServicesWoman from "./images/ServicesWoman.png";
-import SideBySideDivs from "./SideBySideDivs";
-import ServicesFifthTablet from "./images/ServicesFifthTablet.png";
-import SideBlur from "./images/SideBlur.png";
-import SideTransLogo from "/src/assets/transLogo.png";
+import ServiceCard from "../components/ServiceCard";
+import ServicesFirstIcon from "/src/assets/images/ServicesFirstIcon.png";
+import ServicesSecondIcon from "/src/assets/images/ServicesSecondIcon.png";
+import ServicesThirdIcon from "/src/assets/images/ServicesThirdIcon.png";
+import ServicesFourthIcon from "/src/assets/images/ServicesFourthIcon.png";
+import ServicesWoman from "/src/assets/images/ServicesWoman.png";
+import SideBySideDivs from "../components/SideBySideDivs";
+import ServicesFifthTablet from "/src/assets/images/ServicesFifthTablet.png";
+import SideBlur from "/src/assets/images/SideBlur.png";
+import SideTransLogo from "/src/assets/images/transLogo.png";
 
 const OurService = () => {
   return (

@@ -1,11 +1,11 @@
 import React from "react";
-import yellowUpEllipse from "./images/yellowEllipseBlur.png";
-import yellowDownEllipse from "./images/yellowDownEllipse.png";
-import blurDots from "./images/blurDots.png";
-import TravelDown from "./images/TravelDown.png";
-import LineSlant from "./images/lineSlant.png";
-import VectorLeft from "./images/VectorLeft.png";
-import ArrowRightCircle from "./images/ArrowRightCircle.png";
+import yellowUpEllipse from "/src/assets/images/yellowEllipseBlur.png";
+import yellowDownEllipse from "/src/assets/images/yellowDownEllipse.png";
+import blurDots from "/src/assets/images/blurDots.png";
+import TravelDown from "/src/assets/images/TravelDown.png";
+import LineSlant from "/src/assets/images/lineSlant.png";
+import VectorLeft from "/src/assets/images/VectorLeft.png";
+import ArrowRightCircle from "/src/assets/images/ArrowRightCircle.png";
 
 const OverlapImages = () => {
   return (
