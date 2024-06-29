@@ -61,35 +61,55 @@ const AboutUs = () => {
       <div className="absolute top-[55%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 grid grid-cols-2 grid-rows-2 gap-20 w-[80vw] h-auto z-20">
         <ImageCard
           bgImage={AboutUsBlurImage}
+          bgImageHeight="300px"
+          bgImageWidth="300px"
           altText="SEPA Instant, SEPA & SWIFT"
+          altTextSize="14px"
           divPositionTop="92%"
           divPositionLeft="30%"
+          divPaddingTop="10px"
+          divPaddingBottom="10px"
         />
         <ImageCard
           bgImage={AboutUsWomanBackground}
+          bgImageHeight="300px"
+          bgImageWidth="300px"
           fgImage={AboutUsWoman}
           altText="Customer portal for live transaction monitoring"
+          altTextSize="14px"
           divPositionTop="92%"
           divPositionLeft="10%"
-          imageWidth="400px"
-          imageHeight="300px"
+          fgImageWidth="400px"
+          fgImageHeight="300px"
           imagePositionLeft="15%"
+          divPaddingTop="10px"
+          divPaddingBottom="10px"
         />
         <ImageCard
           bgImage={AboutUsManBackground}
+          bgImageHeight="300px"
+          bgImageWidth="300px"
           fgImage={AboutUsMan}
           altText="Danish FSA regulated"
+          altTextSize="14px"
           divPositionTop="10%"
           divPositionLeft="5%"
-          imageWidth="300px"
-          imageHeight="330px"
+          fgImageWidth="300px"
+          fgImageHeight="330px"
           imagePositionTop="-10%"
+          divPaddingTop="10px"
+          divPaddingBottom="10px"
         />
         <ImageCard
           bgImage={AboutUsFirstImg}
+          bgImageHeight="300px"
+          bgImageWidth="300px"
           altText="90+ currencies served"
+          altTextSize="14px"
           divPositionTop="90%"
           divPositionLeft="30%"
+          divPaddingTop="10px"
+          divPaddingBottom="10px"
         />
       </div>
 
@@ -122,7 +142,7 @@ const AboutUs = () => {
           width: "40%",
           children: (
             <div className="grid grid-rows-3 max-w-sm text-left ">
-              <h2 className="font-dm-sans text-3xl">
+              <h2 className="font-gayathri font-bold text-3xl">
                 The human-powered payments network
               </h2>
               <p className="font-dm-sans mb-2 max-w-sm">

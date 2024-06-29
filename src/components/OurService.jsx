@@ -68,7 +68,7 @@ const OurService = () => {
             <>
               {/* Side Blur */}
               <div className="absolute top-0 left-0">
-                <img className="w-screen opacity-50" src={SideBlur} alt="" />
+                <img className="w-screen opacity-70" src={SideBlur} alt="" />
               </div>
               {/* Side Trans Logo */}
               <div className="absolute top-0 left-[8%] ml-4 mt-3">
@@ -95,7 +95,7 @@ const OurService = () => {
           children: (
             <>
               <div className="grid grid-rows mt-6 ml-4 space-y-2 max-w-sm text-left ">
-                <h2 className="gayathri-bold text-3xl">
+                <h2 className="font-gayathri font-bold text-3xl">
                   One portal,
                   <br /> every transaction
                 </h2>
