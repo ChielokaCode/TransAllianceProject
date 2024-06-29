@@ -7,6 +7,7 @@ import AboutUs from "../components/AboutUs";
 import OurService from "../components/OurService";
 import Sectors from "../components/Sectors";
 import SpeakToSales from "../components/SpeakToSales";
+import Footer from "../components/Footer";
 
 const LandingPage = () => {
   return (
@@ -25,22 +26,26 @@ const LandingPage = () => {
       {/* Overlap Two Screens */}
       <OverlapTwoScreens />
 
-      {/* Second Screen */}
+      {/* About Us */}
       <div className="bg-gray-200 w-full h-[200vh] relative space-y-3 pr-4 pl-4 z-20 ">
-        {/* Additional content for the second section */}
         <AboutUs />
       </div>
+      {/* Our Service */}
       <div className="bg-gray-100 w-full h-[200vh] relative space-y-3 pr-4 pl-4 z-10">
-        {/* Additional content for the second section */}
         <OurService />
       </div>
+      {/* Sectors we Serve */}
       <div className="bg-gray-100 w-full h-[200vh] relative space-y-3 pr-4 pl-4 ">
-        {/* Additional content for the second section */}
         <Sectors />
       </div>
-      <div className="bg-gray-100 w-full h-[200vh] relative space-y-3 pr-4 pl-4 ">
-        {/* Additional content for the second section */}
+      {/* Speak to Sales */}
+      <div className="bg-gray-100 w-full h-[100vh] relative space-y-3 pr-4 pl-4 ">
         <SpeakToSales />
+      </div>
+
+      {/* Footer */}
+      <div className="bg-gray-100 w-full h-[50vh] relative space-y-3 pr-4 pl-4 ">
+        <Footer />
       </div>
     </>
   );
