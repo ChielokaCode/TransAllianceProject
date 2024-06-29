@@ -16,14 +16,6 @@ import SideBlur from "/src/assets/images/SideBlur.png";
 import SideTransLogo from "/src/assets/images/transLogo.png";
 
 const AboutUs = () => {
-  const MoneyOut = () => {
-    // Implement your button click handler logic here
-  };
-
-  const LearnMore = () => {
-    // Implement your button click handler logic here
-  };
-
   return (
     <>
       <div className="absolute grid grid-cols-2 gap-4 p-6 h-[70vh] w-[80vw] top-[28%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
@@ -44,7 +36,7 @@ const AboutUs = () => {
         </div>
 
         {/* Money Out Button */}
-        <div className="absolute bottom-[50%] border-2 ml-6 outline-black">
+        <div className="absolute bottom-[50%] border-2 ml-6 cursor-pointer hover:scale-50">
           <Button
             backgroundGradient="linear-gradient(263.68deg, #5AAF87 4.04%, #D3BD00 127.52%)"
             width="160px"
@@ -53,7 +45,7 @@ const AboutUs = () => {
             imgSrc={ArrowRightCircle}
             text="Money Out"
             fontSize="14px"
-            onClick={MoneyOut}
+            hrefPath="/moneyOut"
           />
         </div>
       </div>
@@ -123,7 +115,7 @@ const AboutUs = () => {
           imgSrc={LightGreenArrowCircle}
           text="Learn More"
           fontSize="14px"
-          onClick={LearnMore}
+          hrefPath="/learn-more1"
         />
       </div>
 
@@ -159,7 +151,7 @@ const AboutUs = () => {
                   imgSrc={ArrowRightCircle}
                   text="Learn More"
                   fontSize="14px"
-                  onClick={MoneyOut}
+                  hrefPath="/learn-more2"
                 />
               </div>
             </div>

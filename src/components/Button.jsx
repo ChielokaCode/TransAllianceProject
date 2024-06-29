@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Button = ({
   backgroundGradient,
@@ -8,6 +9,7 @@ const Button = ({
   text,
   fontSize,
   buttonBorderRadius,
+  hrefPath,
   onClick,
 }) => {
   return (
@@ -21,15 +23,15 @@ const Button = ({
       }}
       onClick={onClick}
     >
-      <div className="flex items-center justify-between w-full">
-        <span
-          className="text-black font-bold text-center"
-          style={{ fontSize: fontSize }}
-        >
+      <span
+        className="text-black font-bold text-center"
+        style={{ fontSize: fontSize }}
+      >
+        <Link to={hrefPath} className="flex items-center justify-center">
           {text}
-        </span>
-        <img src={imgSrc} alt="" className="w-6 h-6 ml-auto" />
-      </div>
+          <img src={imgSrc} alt="" className="w-6 h-6 ml-2" />
+        </Link>
+      </span>
     </div>
   );
 };

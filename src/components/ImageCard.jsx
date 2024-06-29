@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ImageCard = ({
   bgImage,
@@ -19,6 +20,7 @@ const ImageCard = ({
   isLearnMore,
   imagePositionTop,
   imagePositionLeft,
+  hrefPath,
 }) => (
   <div className="relative flex items-center justify-center h-full z-20">
     <img
@@ -57,9 +59,13 @@ const ImageCard = ({
         {altText}
       </h2>
       <div className="grid grid-cols-2">
-        <h2 className="font-dm-sans text-sm font-light">{buttonText}</h2>
+        <Link to={hrefPath} className="font-dm-sans text-sm font-light">
+          {buttonText}
+        </Link>
         {isLearnMore ? (
-          <img className="w-6 h-6 ml-1" src={buttonImg} alt=" " />
+          <Link to={hrefPath}>
+            <img className="w-6 h-6 ml-1" src={buttonImg} alt=" " />
+          </Link>
         ) : (
           ""
         )}

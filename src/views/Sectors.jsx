@@ -36,6 +36,7 @@ const Sectors = () => {
               divWidth="200px"
               divPaddingTop="5px"
               divPaddingBottom="5px"
+              hrefPath="/#"
             />
             <ImageCard
               bgImage={SectorsSecondImage}
@@ -50,6 +51,7 @@ const Sectors = () => {
               divPositionLeft="70%"
               divPaddingTop="5px"
               divPaddingBottom="5px"
+              hrefPath="/#"
             />
           </div>
           <div className="grid grid-rows-1 -mt-6 mb-4 space-y-10">
@@ -66,6 +68,7 @@ const Sectors = () => {
               divPositionLeft="10%"
               divPaddingTop="5px"
               divPaddingBottom="5px"
+              hrefPath="/#"
             />
             <ImageCard
               bgImage={SectorsFourthImage}
@@ -80,6 +83,7 @@ const Sectors = () => {
               divPositionLeft="10%"
               divPaddingTop="5px"
               divPaddingBottom="5px"
+              hrefPath="/#"
             />
           </div>
         </div>
