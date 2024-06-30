@@ -3,6 +3,7 @@ import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "tailwindcss/tailwind.css"; // Ensure Tailwind CSS is imported
 import TransLogo from "/src/assets/images/transLogo.png";
+import BlackArrow from "/src/assets/images/BlackArrow.png";
 
 const NavbarT = () => {
   const [navBackground, setNavBackground] = useState("bg-transparent");
@@ -51,8 +52,11 @@ const NavbarT = () => {
             <Nav.Link href="#" className="text-white font-dm-sans text-sm">
               Solutions
             </Nav.Link>
-            <Button className="text-black text-md px-3 py-2 border border-sm bg-green-400 hover:bg-green-200 border-r-green-400">
-              Get Started
+            <Button className="flex items-center text-black p-3 border bg-green-400 hover:bg-green-200 border-r-green-400 transform transition-transform duration-300 hover:scale-105">
+              <span className="text-sm mr-2 font-dm-sans font-medium">
+                Get Started
+              </span>
+              <img className="w-2 h-2" src={BlackArrow} alt="" />
             </Button>
           </Nav>
         </Navbar.Collapse>

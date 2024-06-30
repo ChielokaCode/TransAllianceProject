@@ -22,7 +22,7 @@ const ImageCard = ({
   imagePositionLeft,
   hrefPath,
 }) => (
-  <div className="relative flex items-center justify-center h-full z-20">
+  <div className="relative flex items-center justify-center h-full z-20 transform transition-transform duration-300 hover:scale-105">
     <img
       src={bgImage}
       alt={altText}
@@ -43,7 +43,7 @@ const ImageCard = ({
       />
     )}
     <div
-      className="absolute bg-white backdrop-blur-sm bg-opacity-50 rounded-xl font-dm-sans font-bold px-2"
+      className="absolute bg-white backdrop-blur-sm bg-opacity-50 rounded-xl font-dm-sans font-bold px-2 transform transition-transform duration-300 hover:scale-105"
       style={{
         top: divPositionTop,
         left: divPositionLeft,

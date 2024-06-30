@@ -36,7 +36,7 @@ const AboutUs = () => {
         </div>
 
         {/* Money Out Button */}
-        <div className="absolute bottom-[50%] border-2 ml-6 cursor-pointer hover:scale-50">
+        <div className="absolute bottom-[50%] border-2 ml-6 cursor-pointer">
           <Button
             backgroundGradient="linear-gradient(263.68deg, #5AAF87 4.04%, #D3BD00 127.52%)"
             width="160px"
@@ -106,7 +106,7 @@ const AboutUs = () => {
       </div>
 
       {/* Learn More button */}
-      <div className="absolute bottom-[10%] left-[70%] mb-4 ml-4 border-2 outline-black">
+      <div className="absolute bottom-[10%] left-[70%] mb-4 ml-4 border-2">
         <Button
           backgroundGradient="linear-gradient(264.61deg, #24343E -97.02%, #5AAF87 133.21%)"
           width="160px"
