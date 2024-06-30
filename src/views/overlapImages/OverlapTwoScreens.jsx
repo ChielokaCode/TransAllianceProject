@@ -14,12 +14,36 @@ const OverlapTwoScreens = () => {
           Send and Receive Money from all <br /> over with ease.
         </p>
         <div className="grid grid-cols-6 items-center justify-center">
-          <img src={FirstLogo} alt="" />
-          <img src={SecondLogo} alt="" />
-          <img src={ThirdLogo} alt="" />
-          <img src={FourthLogo} alt="" />
-          <img src={FifthLogo} alt="" />
-          <img src={SixthLogo} alt="" />
+          <img
+            className="transform transition-transform duration-300 hover:scale-125"
+            src={FirstLogo}
+            alt=""
+          />
+          <img
+            className="transform transition-transform duration-300 hover:scale-125"
+            src={SecondLogo}
+            alt=""
+          />
+          <img
+            className="transform transition-transform duration-300 hover:scale-125"
+            src={ThirdLogo}
+            alt=""
+          />
+          <img
+            className="transform transition-transform duration-300 hover:scale-125"
+            src={FourthLogo}
+            alt=""
+          />
+          <img
+            className="transform transition-transform duration-300 hover:scale-125"
+            src={FifthLogo}
+            alt=""
+          />
+          <img
+            className="transform transition-transform duration-300 hover:scale-125"
+            src={SixthLogo}
+            alt=""
+          />
         </div>
       </div>
     </>

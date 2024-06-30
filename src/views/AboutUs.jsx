@@ -178,7 +178,7 @@ const AboutUs = () => {
               {/* Side Woman with Laptop */}
               <div className="flex  top-[10%] left-[30%] absolute justify-center items-center">
                 <img
-                  className=" object-cover w-[350px] h-[350px]"
+                  className=" object-cover w-[350px] h-[350px] transform transition-transform duration-300 hover:scale-105"
                   src={SideWoman}
                   alt=""
                 />

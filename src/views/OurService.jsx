@@ -84,7 +84,7 @@ const OurService = () => {
               {/* Side Woman with Laptop */}
               <div className="flex top-[1%] left-[30%] absolute justify-center items-center">
                 <img
-                  className=" object-contain w-[450px] h-[450px]"
+                  className=" object-contain w-[450px] h-[450px] transform transition-transform duration-300 hover:scale-105"
                   src={ServicesFifthTablet}
                   alt=""
                 />
@@ -106,15 +106,15 @@ const OurService = () => {
                   One portal,
                   <br /> every transaction
                 </h2>
-                <p className="font-dm-sans mb-2 max-w-sm text-md font-light">
+                <p className="font-dm-sans mb-2 max-w-sm text-md font-semibold">
                   Our customer portal provides an intuitive interface to access
                   all of our services via a simple, single login.
-                  <ul className="text-sm font-dm-sans ">
-                    <li>Real-time, 24/7, 365 transaction tracking</li>
-                    <li>Customizable & downloadable reports</li>
-                    <li>Rich data analysis</li>
+                  <ul className="text-sm font-medium font-dm-sans ">
+                    <li>- Real-time, 24/7, 365 transaction tracking</li>
+                    <li>- Customizable & downloadable reports</li>
+                    <li>- Rich data analysis</li>
                     <li>
-                      Multiple integration methods, built to suit your needs
+                      - Multiple integration methods, built to suit your needs
                     </li>
                   </ul>
                 </p>
