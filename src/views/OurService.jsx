@@ -9,6 +9,7 @@ import SideBySideDivs from "../components/SideBySideDivs";
 import ServicesFifthTablet from "/src/assets/images/ServicesFifthTablet.png";
 import SideBlur from "/src/assets/images/SideBlur.png";
 import SideTransLogo from "/src/assets/images/transLogo.png";
+import { Link } from "react-router-dom";
 
 const OurService = () => {
   return (
@@ -51,7 +52,13 @@ const OurService = () => {
               transparent customer relationships, and leading-edge technology.
             </p>
           </div>
-          <img src={ServicesWoman} alt="" />
+          <Link to={"/#"}>
+            <img
+              className="cursor-pointer transform transition-transform duration-300 hover:scale-105"
+              src={ServicesWoman}
+              alt=""
+            />
+          </Link>
         </div>
       </div>
 

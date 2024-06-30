@@ -52,7 +52,7 @@ const NavbarT = () => {
             <Nav.Link href="#" className="text-white font-dm-sans text-sm">
               Solutions
             </Nav.Link>
-            <Button className="flex items-center text-black p-3 border bg-green-400 hover:bg-green-200 border-r-green-400 transform transition-transform duration-300 hover:scale-105">
+            <Button className="flex items-center text-black p-3 border bg-green-400 hover:bg-green-200 border-r-green-400 transform transition-transform duration-300 hover:scale-105 z-30">
               <span className="text-sm mr-2 font-dm-sans font-medium">
                 Get Started
               </span>

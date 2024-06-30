@@ -18,7 +18,7 @@ import SideTransLogo from "/src/assets/images/transLogo.png";
 const AboutUs = () => {
   return (
     <>
-      <div className="absolute grid grid-cols-2 gap-4 p-6 h-[70vh] w-[80vw] top-[28%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute grid grid-cols-2 gap-4 p-6 h-[70vh] w-[80vw] top-[28%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 z-50">
         <span className="font-dm-sans text-sm text-[rgb(133,133,133)]">
           ABOUT US
         </span>
@@ -106,7 +106,7 @@ const AboutUs = () => {
       </div>
 
       {/* Learn More button */}
-      <div className="absolute bottom-[10%] left-[70%] mb-4 ml-4 border-2">
+      <div className="absolute bottom-[10%] left-[70%] mb-4 ml-4 border-2 z-50">
         <Button
           backgroundGradient="linear-gradient(264.61deg, #24343E -97.02%, #5AAF87 133.21%)"
           width="160px"

@@ -35,7 +35,7 @@ const OverlapImages = () => {
       <div className="absolute bottom-0 left-0 bg-green-300 bg-opacity-60 rounded-tr-[50px]">
         <img className="w-[800px] h-[200px]" src={TravelDown} alt="" />
         <Link to="/next">
-          <button className="absolute grid grid-cols-2 items-center top-[-17%] left-1/2 cursor-pointer -translate-x-1/2 bg-[#8A8A8A] font-dm-sans font-bold bg-opacity-70 p-4 shadow-lg rounded-lg w-[300px] border-l-[1px] border-t-[1px] border-white backdrop-blur-sm transform transition-transform duration-300 hover:scale-105">
+          <button className="absolute grid grid-cols-2 items-center top-[-17%] left-1/2 cursor-pointer -translate-x-1/2 bg-[#8A8A8A] font-dm-sans font-bold bg-opacity-70 p-4 shadow-lg rounded-lg w-[300px] border-l-[1px] border-t-[1px] border-white backdrop-blur-sm transform transition-transform duration-300 hover:scale-105 z-50">
             <h2 className="text-white">Discover More</h2>
             <img
               className="w-6 h-6 ml-20 cursor-pointer"

@@ -13,13 +13,10 @@ const HomePage = () => {
   return (
     <>
       <div className="bg-[#122038] w-full h-screen relative">
-        {/* NavBar positioned at the top */}
         <NavBar />
 
-        {/* Overlapping Images */}
         <OverlapImages />
 
-        {/* Main content */}
         <HeroGrid />
       </div>
 
@@ -27,13 +24,17 @@ const HomePage = () => {
       <OverlapTwoScreens />
 
       {/* About Us */}
+
       <div className="bg-gray-200 w-full h-[200vh] relative space-y-3 pr-4 pl-4 z-20 ">
         <AboutUs />
       </div>
+
       {/* Our Service */}
+
       <div className="bg-gray-100 w-full h-[200vh] relative space-y-3 pr-4 pl-4 z-10">
         <OurService />
       </div>
+
       {/* Sectors we Serve */}
       <div className="bg-gray-100 w-full h-[200vh] relative space-y-3 pr-4 pl-4 ">
         <Sectors />

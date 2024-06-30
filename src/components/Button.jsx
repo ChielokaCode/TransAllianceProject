@@ -14,7 +14,7 @@ const Button = ({
 }) => {
   return (
     <div
-      className="flex items-center justify-center p-3 cursor-pointer transform transition-transform duration-300 hover:scale-105"
+      className="flex items-center justify-center p-3 cursor-pointer transform transition-transform duration-300 hover:scale-105 z-50"
       style={{
         background: backgroundGradient,
         width: width,
