@@ -12,8 +12,6 @@ const SideBySideDivs = ({
         className={`absolute ${div1Props.className || ""}`}
         style={{
           ...div1Props.style,
-          height: div1Props.height || "100%",
-          width: div1Props.width || "50%",
           borderTopLeftRadius: div1Props.borderTopLeftRadius || "0",
           borderTopRightRadius: div1Props.borderTopRightRadius || "0",
           bottom: div1Props.bottom || "0%",
@@ -26,8 +24,6 @@ const SideBySideDivs = ({
         className={`absolute ${div2Props.className || ""}`}
         style={{
           ...div2Props.style,
-          height: div2Props.height || "100%",
-          width: div2Props.width || "50%",
           borderTopLeftRadius: div2Props.borderTopLeftRadius || "0",
           borderTopRightRadius: div2Props.borderTopRightRadius || "0",
           bottom: div2Props.bottom || "0%",

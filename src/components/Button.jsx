@@ -12,13 +12,13 @@ const Button = ({
   hrefPath,
   onClick,
 }) => {
+  const widthClass = `w-${width}`;
+  const heightClass = `h-${height}`;
   return (
     <div
-      className="flex items-center justify-center p-3 cursor-pointer transform transition-transform duration-300 hover:scale-105 z-50"
+      className={`flex items-center justify-center p-3 cursor-pointer transform transition-transform duration-300 hover:scale-105 z-50 ${widthClass} ${heightClass}`}
       style={{
         background: backgroundGradient,
-        width: width,
-        height: height,
         borderRadius: buttonBorderRadius,
       }}
       onClick={onClick}

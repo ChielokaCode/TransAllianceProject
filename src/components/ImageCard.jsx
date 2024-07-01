@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ImageCard = ({
+  className,
   bgImage,
   fgImage,
   altText,
@@ -11,35 +12,21 @@ const ImageCard = ({
   divPaddingTop,
   divPaddingBottom,
   divWidth,
-  fgImageWidth,
-  fgImageHeight,
-  bgImageWidth,
-  bgImageHeight,
+  fgClassName,
   buttonText,
   buttonImg,
   isLearnMore,
-  imagePositionTop,
-  imagePositionLeft,
   hrefPath,
 }) => (
-  <div className="relative flex items-center justify-center h-full z-20 transform transition-transform duration-300 hover:scale-105">
-    <img
-      src={bgImage}
-      alt={altText}
-      style={{ width: bgImageWidth, height: bgImageHeight }}
-      className="relative"
-    />
+  <div
+    className={`relative flex items-center justify-center h-full z-20 transform transition-transform duration-300 hover:scale-105 ${className}`}
+  >
+    <img src={bgImage} alt={altText} className="relative" />
     {fgImage && (
       <img
         src={fgImage}
         alt={altText}
-        className="object-contain absolute"
-        style={{
-          top: imagePositionTop,
-          left: imagePositionLeft,
-          width: fgImageWidth,
-          height: fgImageHeight,
-        }}
+        className={`object-contain absolute ${fgClassName}`}
       />
     )}
     <div

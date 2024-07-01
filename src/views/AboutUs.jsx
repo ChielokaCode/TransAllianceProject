@@ -18,11 +18,11 @@ import SideTransLogo from "/src/assets/images/transLogo.png";
 const AboutUs = () => {
   return (
     <>
-      <div className="absolute grid grid-cols-2 gap-4 p-6 h-[70vh] w-[80vw] top-[28%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 z-50">
+      <div className="absolute grid grid-rows-1 md:grid-cols-2 gap-2 md:p-6 p-3 w-[80vw] md:top-[17%] top-[17%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 z-50">
         <span className="font-dm-sans text-sm text-[rgb(133,133,133)]">
           ABOUT US
         </span>
-        <div className="space-y-4 pl-10">
+        <div className="md:pl-10 pl-4">
           <h2 className="font-dm-sans text-3xl">
             Payment pathways, built <br /> for you
           </h2>
@@ -33,10 +33,22 @@ const AboutUs = () => {
             both payouts and pay-ins, say goodbye to the operational headaches
             of multi-supplier management
           </p>
+          <div className="cursor-pointer block md:hidden mt-4">
+            <Button
+              backgroundGradient="linear-gradient(263.68deg, #5AAF87 4.04%, #D3BD00 127.52%)"
+              width="160px"
+              height="55px"
+              buttonBorderRadius="10px"
+              imgSrc={ArrowRightCircle}
+              text="Money Out"
+              fontSize="14px"
+              hrefPath="/moneyOut"
+            />
+          </div>
         </div>
 
         {/* Money Out Button */}
-        <div className="absolute bottom-[50%] border-2 ml-6 cursor-pointer">
+        <div className="absolute bottom-[0] border-2 ml-6 cursor-pointer hidden md:block">
           <Button
             backgroundGradient="linear-gradient(263.68deg, #5AAF87 4.04%, #D3BD00 127.52%)"
             width="160px"
@@ -50,11 +62,10 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="absolute top-[55%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 grid grid-cols-2 grid-rows-2 gap-20 w-[80vw] h-auto z-20">
+      <div className="absolute md:top-[50%] top-[60%] md:left-[55%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 grid grid-rows md:grid-cols-2 gap-20 w-[80vw] h-auto z-20 justify-center items-center">
         <ImageCard
           bgImage={AboutUsBlurImage}
-          bgImageHeight="300px"
-          bgImageWidth="300px"
+          className="md:w-[300px] md:h-[300px] w-[200px] h-[200px]"
           altText="SEPA Instant, SEPA & SWIFT"
           altTextSize="14px"
           divPositionTop="92%"
@@ -64,38 +75,31 @@ const AboutUs = () => {
         />
         <ImageCard
           bgImage={AboutUsWomanBackground}
-          bgImageHeight="300px"
-          bgImageWidth="300px"
+          className="md:w-[300px] md:h-[300px] w-[200px] h-[200px]"
           fgImage={AboutUsWoman}
           altText="Customer portal for live transaction monitoring"
           altTextSize="14px"
           divPositionTop="92%"
           divPositionLeft="10%"
-          fgImageWidth="400px"
-          fgImageHeight="300px"
-          imagePositionLeft="15%"
+          fgClassName="md:w-[300px] md:h-[300px] left-[20%]"
           divPaddingTop="10px"
           divPaddingBottom="10px"
         />
         <ImageCard
           bgImage={AboutUsManBackground}
-          bgImageHeight="300px"
-          bgImageWidth="300px"
+          className="md:w-[300px] md:h-[300px] w-[200px] h-[200px]"
           fgImage={AboutUsMan}
           altText="Danish FSA regulated"
           altTextSize="14px"
           divPositionTop="10%"
           divPositionLeft="5%"
-          fgImageWidth="300px"
-          fgImageHeight="330px"
-          imagePositionTop="-10%"
+          fgClassName="md:w-[300px] md:h-[330px] w-[300px] h-[300px] md:top-[-10%] top-[-32%]"
           divPaddingTop="10px"
           divPaddingBottom="10px"
         />
         <ImageCard
           bgImage={AboutUsFirstImg}
-          bgImageHeight="300px"
-          bgImageWidth="300px"
+          className="md:w-[300px] md:h-[300px] w-[200px] h-[200px]"
           altText="90+ currencies served"
           altTextSize="14px"
           divPositionTop="90%"
@@ -103,10 +107,22 @@ const AboutUs = () => {
           divPaddingTop="10px"
           divPaddingBottom="10px"
         />
+        <div className="block md:hidden ">
+          <Button
+            backgroundGradient="linear-gradient(264.61deg, #24343E -97.02%, #5AAF87 133.21%)"
+            width="160px"
+            height="50px"
+            buttonBorderRadius="10px"
+            imgSrc={LightGreenArrowCircle}
+            text="Learn More"
+            fontSize="14px"
+            hrefPath="/learn-more1"
+          />
+        </div>
       </div>
 
       {/* Learn More button */}
-      <div className="absolute bottom-[10%] left-[70%] mb-4 ml-4 border-2 z-50">
+      <div className="absolute bottom-[10%] left-[70%] mb-4 ml-4 border-2 z-50 hidden md:block">
         <Button
           backgroundGradient="linear-gradient(264.61deg, #24343E -97.02%, #5AAF87 133.21%)"
           width="160px"
@@ -125,24 +141,22 @@ const AboutUs = () => {
 
       {/*  */}
       <SideBySideDivs
-        containerClassName="w-screen h-[60vh]"
-        containerStyle={{ bottom: "-19%", left: "0%" }}
+        containerClassName="w-screen h-[60vh] md:bottom-[-19%] bottom-[-12%] left-[0%]"
         div1Props={{
-          className: "flex justify-end bg-[#5FB083] pt-4",
+          className:
+            "flex md:justify-end justify-center bg-[#5FB083] pt-4 md:pr-3 pr-0 h-[65%] w-screen md:w-[40%]",
           style: { bottom: "-10%" },
-          height: "65%",
-          width: "40%",
           children: (
-            <div className="grid grid-rows-3 max-w-sm text-left ">
+            <div className="grid grid-rows-3 md:max-w-sm max-w-xs text-left">
               <h2 className="font-gayathri font-bold text-3xl">
                 The human-powered payments network
               </h2>
-              <p className="font-dm-sans mb-2 max-w-sm">
+              <p className="font-dm-sans mb-2 max-w-sm text-sm">
                 Driven by a team of over 200 global payments experts with
                 absolute dedication to solving our customers’ most complex
                 cross-border payments challenges.
               </p>
-              <div className="mt-2">
+              <div className="mt-3 mx-3 justify-start">
                 <Button
                   backgroundGradient="linear-gradient(263.68deg, #5AAF87 4.04%, #D3BD00 127.52%)"
                   width="160px"
@@ -158,12 +172,11 @@ const AboutUs = () => {
           ),
         }}
         div2Props={{
-          className: "bg-[#122038]",
+          className: "bg-[#122038] h-[90%] w-[60%] hidden md:block",
           style: {
             bottom: "-10%",
           },
-          height: "90%",
-          width: "60%",
+
           borderTopLeftRadius: "50px",
           children: (
             <>
@@ -176,9 +189,9 @@ const AboutUs = () => {
                 <img className="w-14 h-14" src={SideTransLogo} alt="" />
               </div>
               {/* Side Woman with Laptop */}
-              <div className="flex  top-[10%] left-[30%] absolute justify-center items-center">
+              <div className="flex  top-[10%] md:left-[30%] left-[15%] absolute justify-center items-center">
                 <img
-                  className=" object-cover w-[350px] h-[350px] transform transition-transform duration-300 hover:scale-105"
+                  className="object-cover md:w-[350px] w-[250px] md:h-[350px] h-[250px] transform transition-transform duration-300 hover:scale-105"
                   src={SideWoman}
                   alt=""
                 />

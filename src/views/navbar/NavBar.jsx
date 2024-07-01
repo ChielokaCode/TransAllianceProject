@@ -28,15 +28,21 @@ const NavbarT = () => {
     <Navbar
       expand="lg"
       fixed="top"
-      className={`${navBackground} transition-colors duration-300 pt-10 pl-5 pr-5`}
+      className={`${navBackground} transition-colors duration-300 pt-10 mx-0`}
     >
-      <Container>
-        <Navbar.Brand href="#" className="pl-20">
-          <img className="w-16" src={TransLogo} alt="" />
+      <Container className="mx-3 mr-4 md:mr-0">
+        <Navbar.Brand href="#" className="md:pl-20">
+          <img className="md:w-16 w-12" src={TransLogo} alt="" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto pr-10 space-x-8 justify-center">
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          className="bg-yellow-400 mr-5 ml-2"
+        />
+        <Navbar.Collapse
+          id="basic-navbar-nav"
+          className="bg-[#122038] md:bg-transparent"
+        >
+          <Nav className="md:ml-auto md:pr-10 md:space-x-8 justify-center p-3 md:p-0">
             <Nav.Link href="#" className="text-white font-dm-sans text-sm">
               Home
             </Nav.Link>

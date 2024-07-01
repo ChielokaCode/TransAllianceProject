@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import TransAllianceLogoGif from "/src/assets/images/TransAllianceLogoGif.gif";
+import "./App.css";
 
 // Import views using lazy loading
 const LandingPage = lazy(() => import("./pages/HomePage"));

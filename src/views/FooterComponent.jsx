@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const FooterComponent = () => {
   return (
     <>
-      <div className="absolute top-[0%] left-[0] w-screen h-[70vh] pt-14 px-32 text-center grid grid-cols-5 bg-white text-black">
+      <div className="absolute md:top-[0%] top-[-30%] left-[0] w-screen md:h-[70vh] h-[50vh] md:pt-14 pt-10 px-32 text-center grid md:grid-cols-5 grid-rows bg-white text-black">
         <div className="grid grid-rows-2 gap-y-10 h-fit">
           <div className="flex items-center space-x-2 h-fit">
             <img className="w-14 h-14" src={TransLogoFooterDark} alt="" />
@@ -32,7 +32,7 @@ const FooterComponent = () => {
             />
           </div>
         </div>
-        <div className="grid grid-rows space-y-4 max-w-32 font-dm-sans text-left h-fit ml-4">
+        <div className="grid grid-rows md:space-y-4 space-y-2 max-w-32 font-dm-sans text-left h-fit ml-4">
           <h2 className="font-semibold">Offices</h2>
           <h4 className="text-xs font-light">
             Denmark:
@@ -47,7 +47,7 @@ const FooterComponent = () => {
             Phone: +45 88 610 600
           </h4>
         </div>
-        <div className="grid grid-rows space-y-4 font-dm-sans text-left h-fit ml-4">
+        <div className="grid grid-rows md:space-y-4 space-y-2 font-dm-sans text-left h-fit ml-4">
           <h2 className="font-semibold">Solutions</h2>
           <Link to={"#"} className="">
             Money Out
@@ -56,7 +56,7 @@ const FooterComponent = () => {
             Money In
           </Link>
         </div>
-        <div className="grid grid-rows space-y-4 font-dm-sans text-left h-fit ml-4">
+        <div className="grid grid-rows md:space-y-4 space-y-2 font-dm-sans text-left h-fit ml-4">
           <h2 className="font-semibold">Sectors</h2>
           <Link to={"#"} className="">
             Financial Services
@@ -71,7 +71,7 @@ const FooterComponent = () => {
             NGOs
           </Link>
         </div>
-        <div className="grid grid-rows space-y-4 font-dm-sans text-left h-fit ml-4">
+        <div className="grid grid-rows md:space-y-4 space-y-2 font-dm-sans text-left h-fit ml-4">
           <h2 className="font-semibold">Others</h2>
           <Link to={"#"} className="">
             About Us
@@ -107,7 +107,7 @@ const FooterComponent = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-[-40%] left-[0] w-screen h-[5vh] pt-14 px-32 text-center grid grid-cols-5 bg-[#122038] text-black">
+      <div className="absolute md:bottom-[-40%] bottom-[-130%] left-[0] w-screen h-[5vh] pt-14 px-32 text-center grid grid-cols-5 bg-[#122038] text-black">
         <div className="absolute bottom-0 left-0 ">
           <img className="w-fit" src={FooterBlur} alt="" />
         </div>

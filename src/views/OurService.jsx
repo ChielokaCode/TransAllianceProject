@@ -14,8 +14,8 @@ import { Link } from "react-router-dom";
 const OurService = () => {
   return (
     <>
-      <div className="absolute grid grid-cols-2 gap-4 p-6 h-[70vh] w-[80vw] top-[40%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 ">
-        <div className="grid grid-rows space-y-3">
+      <div className="absolute grid grid-cols-2 gap-4 p-6 h-[70vh] md:w-[80vw] w-screen md:top-[40%] top-[35%] md:left-[50%] left-[55%] transform -translate-x-1/2 -translate-y-1/2 ">
+        <div className="grid grid-rows space-y-3 w-screen">
           <span className="text-sm text-[#757575] font-dm-sans">
             OUR SERVICE
           </span>
@@ -41,7 +41,7 @@ const OurService = () => {
             bodyText="We complete an industry-leading 99% of payments for customers in the fast-changing financial services, iGaming, corporate and NGO sectors, drawing on 16 years of proven expertise."
           />
         </div>
-        <div className="grid grid-rows space-y-2">
+        <div className="md:grid grid-rows space-y-2 hidden">
           <div className="space-y-2">
             <h2 className="font-gayathri text-4xl">
               The Transalliance Group. <br />
@@ -63,13 +63,11 @@ const OurService = () => {
       </div>
 
       <SideBySideDivs
-        containerClassName="w-screen h-[60vh]"
-        containerStyle={{ bottom: "-10%", left: "0%" }}
+        containerClassName="w-screen h-[60vh] md:bottom-[-10%] bottom-[0] left-[0]"
         div1Props={{
-          className: "flex justify-end bg-[#122038] pt-4",
+          className:
+            "flex justify-end bg-[#122038] pt-4 h-[90%] w-[60%] hidden md:block",
           style: { bottom: "-10%" },
-          height: "90%",
-          width: "60%",
           borderTopRightRadius: "50px",
           children: (
             <>
@@ -93,15 +91,13 @@ const OurService = () => {
           ),
         }}
         div2Props={{
-          className: "bg-[#5FB083]",
+          className: "bg-[#5FB083] h-[65%] w-screen md:w-[40%] ",
           style: {
             bottom: "-10%",
           },
-          height: "65%",
-          width: "40%",
           children: (
             <>
-              <div className="grid grid-rows mt-6 ml-4 space-y-2 max-w-sm text-left ">
+              <div className="grid grid-rows mt-6 md:ml-4 ml-10 space-y-2 max-w-sm text-left ">
                 <h2 className="font-gayathri font-bold text-3xl">
                   One portal,
                   <br /> every transaction
