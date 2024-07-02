@@ -30,7 +30,7 @@ const NavbarT = () => {
       fixed="top"
       className={`${navBackground} transition-colors duration-300 pt-10`}
     >
-      <Container className="mx-3 mr-4 md:mr-0">
+      <Container className="">
         <Navbar.Brand href="#" className="md:pl-20">
           <img className="md:w-16 w-12" src={TransLogo} alt="" />
         </Navbar.Brand>

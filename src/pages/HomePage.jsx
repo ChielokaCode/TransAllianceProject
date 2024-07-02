@@ -8,11 +8,12 @@ import OurService from "../views/OurService";
 import Sectors from "../views/Sectors";
 import SpeakToSales from "../views/SpeakToSales";
 import FooterComponent from "../views/FooterComponent";
+import "./HomePage.css";
 
 const HomePage = () => {
   return (
     <>
-      <div className="bg-[#122038] w- h-screen relative">
+      <div className="bg-[#122038] w-[100vw] h-screen relative">
         <NavBar />
         <OverlapImages />
         <HeroGrid />
