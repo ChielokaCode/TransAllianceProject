@@ -28,7 +28,7 @@ const NavbarT = () => {
     <Navbar
       expand="lg"
       fixed="top"
-      className={`${navBackground} transition-colors duration-300 pt-10 mx-0`}
+      className={`${navBackground} transition-colors duration-300 pt-10`}
     >
       <Container className="mx-3 mr-4 md:mr-0">
         <Navbar.Brand href="#" className="md:pl-20">
@@ -36,7 +36,7 @@ const NavbarT = () => {
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
-          className="bg-yellow-400 mr-5 ml-2"
+          className="bg-yellow-400"
         />
         <Navbar.Collapse
           id="basic-navbar-nav"

@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Button from "./Button";
 import LightGreenArrowCircle from "/src/assets/images/LightGreenArrowCircle.png";
+import xss from "xss";
 
 const CustomForm = () => {
-  const [userMessage, setUserMessage] = useState({
+  const [formData, setFormData] = useState({
     email: "",
     firstName: "",
     lastName: "",
@@ -11,11 +12,31 @@ const CustomForm = () => {
     agree: false,
   });
 
-  const { email, firstName, lastName, message, agree } = userMessage;
+  const [errors, setErrors] = useState({});
+
+  const validate = () => {
+    const errors = {};
+    if (!formData.email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+      errors.email = "Invalid email address";
+    }
+    if (formData.firstName.trim() === "") {
+      errors.firstName = "First name is required";
+    }
+    if (formData.lastName.trim() === "") {
+      errors.lastName = "Last name is required";
+    }
+    if (formData.message.trim() === "") {
+      errors.message = "Message is required";
+    }
+    if (!formData.agree) {
+      errors.agree = "Pls tick the checkbox to agree";
+    }
+    return errors;
+  };
 
   const handleChange = (e) => {
     const { id, value, type, checked } = e.target;
-    setUserMessage((prevState) => ({
+    setFormData((prevState) => ({
       ...prevState,
       [id]: type === "checkbox" ? checked : value,
     }));
@@ -23,8 +44,22 @@ const CustomForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log(userMessage);
+    const validationErrors = validate();
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+    } else {
+      setErrors({});
+      const sanitizedData = {
+        ...formData,
+        email: xss(formData.email),
+        firstName: xss(formData.firstName),
+        lastName: xss(formData.lastName),
+        message: xss(formData.message),
+        agree: xss(formData.agree),
+      };
+      console.log("Sanitized Form Data:", sanitizedData);
+      // Proceed with form submission (axios)
+    }
   };
 
   return (
@@ -36,10 +71,11 @@ const CustomForm = () => {
         <input
           id="email"
           type="email"
-          value={email}
+          value={formData.email}
           onChange={handleChange}
           className="w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
+        {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
       </div>
       <div>
         <label
@@ -51,10 +87,13 @@ const CustomForm = () => {
         <input
           id="firstName"
           type="text"
-          value={firstName}
+          value={formData.firstName}
           onChange={handleChange}
           className="w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
+        {errors.firstName && (
+          <p className="text-red-500 text-sm">{errors.firstName}</p>
+        )}
       </div>
       <div>
         <label
@@ -66,10 +105,13 @@ const CustomForm = () => {
         <input
           id="lastName"
           type="text"
-          value={lastName}
+          value={formData.lastName}
           onChange={handleChange}
           className="w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
+        {errors.lastName && (
+          <p className="text-red-500 text-sm">{errors.lastName}</p>
+        )}
       </div>
       <div>
         <label
@@ -80,17 +122,20 @@ const CustomForm = () => {
         </label>
         <textarea
           id="message"
-          value={message}
+          value={formData.message}
           onChange={handleChange}
           className="w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           rows="5"
         ></textarea>
+        {errors.message && (
+          <p className="text-red-500 text-sm">{errors.message}</p>
+        )}
       </div>
       <div className="grid grid-cols">
         <input
           id="agree"
           type="checkbox"
-          checked={agree}
+          checked={formData.agree}
           onChange={handleChange}
           className="h-4 w-4 border-gray-300 rounded focus:ring-2 focus:ring-blue-500"
         />
@@ -104,17 +149,20 @@ const CustomForm = () => {
             Privacy Policy.
           </a>
         </label>
+        {errors.agree && <p className="text-red-500 text-sm">{errors.agree}</p>}
       </div>
-      <Button
-        backgroundGradient="linear-gradient(264.61deg, #24343E -97.02%, #5AAF87 133.21%)"
-        width="160px"
-        height="50px"
-        buttonBorderRadius="10px"
-        imgSrc={LightGreenArrowCircle}
-        text="Submit"
-        fontSize="16px"
-        onClick={handleSubmit}
-      />
+      <div className="mx-4">
+        <Button
+          backgroundGradient="linear-gradient(264.61deg, #24343E -97.02%, #5AAF87 133.21%)"
+          width="160px"
+          height="50px"
+          buttonBorderRadius="10px"
+          imgSrc={LightGreenArrowCircle}
+          text="Submit"
+          fontSize="16px"
+          onClick={handleSubmit}
+        />
+      </div>
     </form>
   );
 };

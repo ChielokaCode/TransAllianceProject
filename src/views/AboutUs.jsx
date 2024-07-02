@@ -62,50 +62,38 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="absolute md:top-[50%] top-[60%] md:left-[55%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 grid grid-rows md:grid-cols-2 gap-20 w-[80vw] h-auto z-20 justify-center items-center">
+      <div className="absolute md:top-[50%] top-[62%] md:left-[55%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 grid grid-rows md:grid-cols-2 md:gap-20 gap-16 w-[80vw] h-auto z-20 justify-center items-center">
         <ImageCard
           bgImage={AboutUsBlurImage}
           className="md:w-[300px] md:h-[300px] w-[200px] h-[200px]"
           altText="SEPA Instant, SEPA & SWIFT"
-          altTextSize="14px"
-          divPositionTop="92%"
-          divPositionLeft="30%"
-          divPaddingTop="10px"
-          divPaddingBottom="10px"
+          divTextClassName="md:text-sm text-xs"
+          divClassName="top-[92%] md:left-[30%] left-[15%] md:py-3 py-2 md:w-[15vw] w-[35vw]"
         />
         <ImageCard
           bgImage={AboutUsWomanBackground}
           className="md:w-[300px] md:h-[300px] w-[200px] h-[200px]"
           fgImage={AboutUsWoman}
           altText="Customer portal for live transaction monitoring"
-          altTextSize="14px"
-          divPositionTop="92%"
-          divPositionLeft="10%"
-          fgClassName="md:w-[300px] md:h-[300px] left-[20%]"
-          divPaddingTop="10px"
-          divPaddingBottom="10px"
+          divTextClassName="md:text-sm text-xs"
+          fgClassName="md:w-[400px] md:h-[400px] left-[20%]"
+          divClassName="top-[92%] left-[0] md:py-3 py-2 md:w-[23vw]"
         />
         <ImageCard
           bgImage={AboutUsManBackground}
           className="md:w-[300px] md:h-[300px] w-[200px] h-[200px]"
           fgImage={AboutUsMan}
           altText="Danish FSA regulated"
-          altTextSize="14px"
-          divPositionTop="10%"
-          divPositionLeft="5%"
+          divTextClassName="md:text-sm text-xs"
           fgClassName="md:w-[300px] md:h-[330px] w-[300px] h-[300px] md:top-[-10%] top-[-32%]"
-          divPaddingTop="10px"
-          divPaddingBottom="10px"
+          divClassName="top-[10%] left-[-20%] md:py-3 py-2"
         />
         <ImageCard
           bgImage={AboutUsFirstImg}
           className="md:w-[300px] md:h-[300px] w-[200px] h-[200px]"
           altText="90+ currencies served"
-          altTextSize="14px"
-          divPositionTop="90%"
-          divPositionLeft="30%"
-          divPaddingTop="10px"
-          divPaddingBottom="10px"
+          divTextClassName="md:text-sm text-xs"
+          divClassName="top-[90%] md:left-[30%] left-[15%] md:py-3 py-2 md:w-[15vw] w-[28vw]"
         />
         <div className="block md:hidden ">
           <Button

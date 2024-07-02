@@ -20,65 +20,52 @@ const Sectors = () => {
             how we add value below.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 grid-rows md:gap-x-4 gap-y-2 h-auto md:mt-8 mt-2">
-          <div className="grid grid-rows md:space-y-8 space-y-0 justify-center">
+        <div className="grid md:grid-cols-2 grid-rows-2 md:gap-x-4 gap-y-2 h-auto md:mt-8 mt-2">
+          <div className="grid grid-rows md:space-y-8 space-y-8 justify-center">
             <ImageCard
               bgImage={SectorsFirstImage}
               className="md:w-[350px] md:h-[250px] w-[250px] h-[250px]"
               altText="Financial Services"
-              altTextSize="20px"
               buttonText="Learn More"
               isLearnMore="true"
               buttonImg={LearnMoreButton}
-              divPositionTop="60%"
-              divPositionLeft="70%"
-              divWidth="200px"
-              divPaddingTop="5px"
-              divPaddingBottom="5px"
+              divClassName="top-[60%] md:left-[70%] left-[50%] py-1 md:w-48 w-40"
+              divTextClassName="text-sm"
               hrefPath="/#"
             />
             <ImageCard
               bgImage={SectorsSecondImage}
               className="md:w-[350px] md:h-[250px] w-[250px] h-[250px]"
               altText="NGOs"
-              altTextSize="20px"
+              divTextClassName="text-sm"
               buttonText="Learn More"
               isLearnMore="true"
               buttonImg={LearnMoreButton}
-              divPositionTop="15%"
-              divPositionLeft="70%"
-              divPaddingTop="5px"
-              divPaddingBottom="5px"
+              divClassName="top-[15%] md:left-[70%] left-[50%] py-1 md:w-48 w-40"
               hrefPath="/#"
             />
           </div>
-          <div className="grid grid-rows-1 md:-mt-6 mt-0 mb-4 md:space-y-10 space-y-0 justify-center">
+          <div className="grid grid-rows-1 md:-mt-6 mt-6 mb-4 md:space-y-10 space-y-8 justify-center">
             <ImageCard
               bgImage={SectorsThirdImage}
               className="md:w-[350px] md:h-[250px] w-[250px] h-[250px]"
               altText="iGaming"
-              altTextSize="20px"
+              divTextClassName="text-sm"
               buttonText="Learn More"
               isLearnMore="true"
               buttonImg={LearnMoreButton}
-              divPositionTop="5%"
-              divPositionLeft="10%"
-              divPaddingTop="5px"
-              divPaddingBottom="5px"
+              divClassName="top-[5%] left-[-20%] py-1"
               hrefPath="/#"
             />
             <ImageCard
               bgImage={SectorsFourthImage}
               className="md:w-[350px] md:h-[250px] w-[250px] h-[250px]"
               altText="Corporates"
-              altTextSize="20px"
+              divTextClassName="text-sm"
               buttonText="Learn More"
               isLearnMore="true"
               buttonImg={LearnMoreButton}
-              divPositionTop="80%"
-              divPositionLeft="10%"
-              divPaddingTop="5px"
-              divPaddingBottom="5px"
+              divClassName="top-[80%] left-[10%] py-1"
               hrefPath="/#"
             />
           </div>

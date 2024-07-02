@@ -10,11 +10,8 @@ const RightHandHero = () => {
           bgImage={FirstImage}
           className="md:w-[300px] md:h-[300px] w-[200px] h-[200px]"
           altText="24/7, 365 transaction tracking"
-          altTextSize="14px"
-          divPositionTop="25%"
-          divPositionLeft="-25%"
-          divPaddingTop="15px"
-          divPaddingBottom="15px"
+          divTextClassName="text-sm"
+          divClassName="top-[25%] left-[-25%] py-3"
         />
       </div>
     </>

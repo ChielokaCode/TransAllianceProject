@@ -6,12 +6,8 @@ const ImageCard = ({
   bgImage,
   fgImage,
   altText,
-  altTextSize,
-  divPositionTop,
-  divPositionLeft,
-  divPaddingTop,
-  divPaddingBottom,
-  divWidth,
+  divTextClassName,
+  divClassName,
   fgClassName,
   buttonText,
   buttonImg,
@@ -30,18 +26,11 @@ const ImageCard = ({
       />
     )}
     <div
-      className="absolute bg-white backdrop-blur-sm bg-opacity-50 rounded-xl font-dm-sans font-bold px-2 transform transition-transform duration-300 hover:scale-105"
-      style={{
-        top: divPositionTop,
-        left: divPositionLeft,
-        width: divWidth,
-        paddingTop: divPaddingTop,
-        paddingBottom: divPaddingBottom,
-      }}
+      className={`absolute bg-white backdrop-blur-sm bg-opacity-50 rounded-xl font-dm-sans font-bold px-2 transform transition-transform duration-300 hover:scale-105 ${divClassName}`}
     >
       <h2
-        className="font-dm-sans"
-        style={{ fontWeight: "500", fontSize: altTextSize }}
+        className={`font-dm-sans ${divTextClassName}`}
+        style={{ fontWeight: "500" }}
       >
         {altText}
       </h2>
